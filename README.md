@@ -29,7 +29,7 @@ _klopptions_ uses the following terminology and supports the following command l
 * An **option** is a named value returned after parsing;
 * Options can be specified directly on the command line by prefixing the option name wih two hyphes `--`, and following the name with a value; (unless its a switch, see below);
 * Short flags are usually single characters with a hyphen prefix, and are used as short forms of full option names. When used, flags must be mapped to option names in the _klopptions_ setup configuration (see below).
-* Options can also be defined as switches. Switches don't require a value following the flag on the comamnd line; instead, the switch value is provided in the setup configuration (see below).
+* Options can also be defined as **switches**. Switches don't require a value following the flag on the comamnd line; instead, the switch value is provided in the setup configuration (see below).
 * **Positional arguments** are non-flag arguments which are assigned a name based on their position in the argument list.
 * **Varargs** are positional arguments that appear last and which are allocated all trailing values from the argument list.
 
