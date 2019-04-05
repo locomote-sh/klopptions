@@ -1,0 +1,35 @@
+{
+  "name": "@locomote.sh/klopptions",
+  "version": "0.8.0",
+  "description": "Simple module for parsing command line options",
+  "main": "lib/klopptions.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/locomote-sh/klopptions.git"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "line",
+    "parser",
+    "switch",
+    "flag",
+    "option",
+    "argument"
+  ],
+  "author": "Julian Goacher",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/locomote-sh/klopptions/issues"
+  },
+  "homepage": "https://github.com/locomote-sh/klopptions#readme"
+}
