@@ -1,8 +1,8 @@
 {
   "name": "@locomote.sh/klopptions",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "description": "Simple module for parsing command line options",
-  "main": "lib/klopptions.js",
+  "main": "klopptions.js",
   "directories": {
     "test": "test"
   },

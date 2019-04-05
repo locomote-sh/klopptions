@@ -56,7 +56,7 @@ function klopptions( setup = {} ) {
             // Full option name should appear in flags.
             opt = flags[arg];
             if( !opt ) {
-                throw new Error('Unrecognized flag:'+arg );
+                throw new Error('Unrecognized flag: '+arg );
             }
         }
         else if( positional.length > 0 ) {
