@@ -24,7 +24,7 @@
  *              - positional    A list of positional argument names.
  *              - values        An optional map of default value names.
  */
-module.exports = function( setup = {} ) { 
+function klopptions( setup = {} ) { 
 
     const {
         argv,       // Allow argv to be used as a synonym for args.
@@ -80,12 +80,12 @@ module.exports = function( setup = {} ) {
         else throw new Error('Unexpected argument: ', arg );
 
         // Check for a switch option. Switches are standalone flags
-        // which don't have a follow-on argument value; the value to
-        // use with the switch is instead read from the switches var.
+        // which don't have a follow-on argument value; instead, they
+        // define a set of values to apply to the result.
         if( opt ) {
-            const value = switches[opt];
-            if( value !== undefined ) {
-                values[opt] = value;
+            const overlay = switches[opt];
+            if( overlay ) {
+                Object.assign( values, overlay );
                 opt = false;
             }
         }
@@ -97,4 +97,10 @@ module.exports = function( setup = {} ) {
     }
 
     return values;
+}
+
+module.exports = klopptions;
+
+if( require.main === module ) {
+    console.log('%j', klopptions() );
 }

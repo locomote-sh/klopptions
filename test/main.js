@@ -47,13 +47,13 @@ describe('switches', function() {
 
     it('should map flags to switch values', function() {
         const flags = { '-x': 'xxx' };
-        const switches = { 'xxx': '123' };
-        const { xxx } = klopptions({
+        const switches = { 'xxx': { 'yyy': '123' } };
+        const { yyy } = klopptions({
             args: ['-x'],
             flags,
             switches
         });
-        assert.equal( xxx, '123');
+        assert.equal( yyy, '123');
     });
 });
 
