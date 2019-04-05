@@ -94,9 +94,10 @@ Can be parsed using the following setup:
 
 ```js
     const flags = { '-L', 'large' };
-    const switches = { 'large': { size: 'large' } };
-    const { size } = klopptions({ flags, switches });
+    const switches = { 'large': { size: 'large', color: 'red' } };
+    const { size, color } = klopptions({ flags, switches });
     // size == 'large'
+    // color == 'red'
 ```
 
 ## Positionals
