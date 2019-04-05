@@ -73,7 +73,7 @@ So for example, the command line:
 Can be parsed using the following setup:
 
 ```js
-    const flags = { '-c': 'red', '-s': 'size' };
+    const flags = { '-c': 'color', '-s': 'size' };
     const { color, size } = klopptions({ flags });
     // color == 'red'
     // size == 'large'
