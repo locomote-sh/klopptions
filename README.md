@@ -113,8 +113,8 @@ For example, the command line:
 Can be parsed using the following setup:
 
 ```js
-    const positionals = ['color','size'];
-    const { color, size } = klopptions({ positionals });
+    const positional = ['color','size'];
+    const { color, size } = klopptions({ positional });
     // color == 'red'
     // size == 'large'
 ```
@@ -123,8 +123,8 @@ Varargs which capture all trailing arguments can be defined using a positional n
 This should be the last name in the positional list:
 
 ```js
-    const positionals = ['color','size','...players'];
-    const { color, size, players } = klopptions({ positionals });
+    const positional = ['color','size','...players'];
+    const { color, size, players } = klopptions({ positional });
 
     // 'players' is an array of values:
     for( const player of players ) {
